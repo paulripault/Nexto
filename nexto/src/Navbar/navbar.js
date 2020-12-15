@@ -26,7 +26,6 @@ export default function navbar() {
 
                 </Navbar.Collapse>
             </Navbar>
-            <hr></hr>
         </div >
 
 
