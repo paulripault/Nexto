@@ -1,0 +1,19 @@
+
+#section_connexion {
+    margin-top: 10%;
+}
+
+.form-group {
+    margin-bottom: 0;
+}
+
+#formGroupEmail {
+    border-radius: 10px;
+}
+#formGroupPassword {
+    border-radius: 10px;
+}
+.submit_connexion {
+    border-radius: 24px;
+    width: 45%;
+}
