@@ -1,14 +1,9 @@
 body {
-  margin: 0;
-  font-family: 'Helvetica', sans-serif;
-  background-color: #FDFAF5;
+    margin: 0;
+    font-family: 'Helvetica', sans-serif;
+    background-color: #FDFAF5;
 }
-@font-face {
-  font-family: 'Helvetica';
-  src: local('Helvetica'), url(./fonts/Helvetica.ttf) format('truetype');}
-  /* DISABLED FONT DEFAULT */
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
