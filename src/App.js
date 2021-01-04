@@ -1,27 +1,28 @@
-import React from 'react';
+import React, { Component } from 'react';
+import { BrowserRouter as Router, Switch, Route, Link, BrowserRouter } from 'react-router-dom';
+import Navbar from './components/Navbar';
+import Home from './pages/Home';
+import Features from './pages/Features';
+import Contact from './pages/Contact';
+import About from './pages/About';
 import './App.css';
-import Navbar from './components/Navbar/navbar';
-
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import Homepage from './components/Homepage';
-import Features from './components/informations/Features';
-import Confidentiality from './components/informations/Confidentiality';
-import About from './components/informations/About';
-import Contact from './components/informations/Contact';
 
 function App() {
   return (
     <BrowserRouter>
-      <div className="container-fluid">
-      <Navbar />
-        <Switch>
-          <Route exact path="/" component ={ Homepage }/>
-          <Route exact path="/features" component ={ Features }/>
-          <Route exact path="/confidentiality" component ={ Confidentiality }/>
-          <Route exact path="/contact" component ={ Contact }/>
-          <Route exact path="/about" component ={ About }/>
-        </Switch>
-      </div>
+      <div className="App">
+        <Router>
+          <div className="container">
+            <Navbar />
+          </div>
+          <Switch>
+            <Route exact path='/' component={Home} />
+            <Route exact path='/features' component={Features} />
+            <Route exact path='/contact' component={Contact} />
+            <Route path='/about' component={About} />
+          </Switch>
+        </Router>
+      </div >
     </BrowserRouter>
   );
 }

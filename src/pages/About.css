@@ -1,0 +1,25 @@
+#section_about {
+    margin-top: 100px;
+}
+
+
+.text-desc {
+    color: #42ba96;
+    margin-top: 10px;
+}
+
+.discover_div {
+    position: relative;
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+.badge-success-soft {
+    color: #42ba96;
+}
+
+.BsCheckCircle {
+    width: 200%;
+}
