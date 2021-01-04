@@ -8,7 +8,7 @@ function App() {
     <div className="App">
       <Navbar />
       <Section_index />
-
+      <p>Test</p>
     </div >
   );
 }
