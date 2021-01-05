@@ -1,7 +1,13 @@
 body {
     margin: 0;
-    font-family: 'Helvetica', sans-serif;
-    background-color: #FDFAF5;
+    background-color: #ffffff;
+    font-family: Helvetica;
+}
+
+@font-face {
+    font-family: "Helvetica";
+    src: local("Helvetica"), url("./fonts/Helvetica.ttf") format("truetype");
+    font-weight: normal;
 }
 
 code {
