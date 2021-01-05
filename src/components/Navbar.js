@@ -4,7 +4,7 @@ import "./Navbar.css";
 import Image from "react-bootstrap/Image";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
-import Nexto from "../img/nexto.png";
+import Nexto from "../img/nexto2.png";
 
 export default function navbar() {
   return (
@@ -26,7 +26,7 @@ export default function navbar() {
               Contact
             </Nav.Link>
             <Nav.Link href="/about" className="hvr-underline-from-left">
-              A propos{" "}
+              A propos
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
