@@ -1,4 +1,3 @@
-
 #section_connexion {
     margin-top: 10%;
 }
@@ -10,10 +9,30 @@
 #formGroupEmail {
     border-radius: 10px;
 }
+
 #formGroupPassword {
     border-radius: 10px;
 }
+
 .submit_connexion {
     border-radius: 24px;
     width: 45%;
+}
+
+.btn-primary {
+    background-color: #431D60;
+    border-color: #431D60;
+}
+
+.btn-primary:hover {
+    background-color: #431D60;
+    border-color: #431D60;
+}
+
+a:hover {
+    color: #431D60;
+}
+
+a {
+    color: #431D60;
 }
