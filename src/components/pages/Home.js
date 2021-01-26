@@ -1,14 +1,14 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./Home.css";
+import "../../css/main.css";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import Image from "react-bootstrap/Image";
-import PhotoApp from "../img/app.png";
+import PhotoApp from "../../img/app.png";
 
-export default function section_connexion() {
+export default function Home() {
   return (
-    <div className="container" id="section_connexion">
+    <div className="container" id="home">
       <div className="row">
         <div className="col-lg-5 mr-5">
           <div className="display-3 mt-5 mb-2"> Bienvenue! </div>

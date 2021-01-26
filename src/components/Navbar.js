@@ -1,6 +1,5 @@
 import React from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
-import "./Navbar.css";
+import "../css/main.css";
 import Image from "react-bootstrap/Image";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
@@ -19,8 +18,8 @@ export default function navbar() {
             <Nav.Link href="/" className="hvr-underline-from-left">
               Accueil
             </Nav.Link>
-            <Nav.Link href="/features" className="hvr-underline-from-left">
-              Fonctionnalités
+            <Nav.Link href="/news" className="hvr-underline-from-left">
+              Nouveautés
             </Nav.Link>
             <Nav.Link href="/contact" className="hvr-underline-from-left">
               Contact

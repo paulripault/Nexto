@@ -1,0 +1,176 @@
+
+/* Navbar */
+#Navbar {
+    margin-top: 10px;
+    align-items: center;
+    font-size: 18px;
+    background-color: #ffffff;
+}
+
+.a  {
+    color: black;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: black;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: black;
+    ;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+/* Underline From Left */
+
+.hvr-underline-from-left {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+}
+
+.hvr-underline-from-left:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 100%;
+    bottom: 0;
+    background: #431D60;
+    height: 2px;
+    -webkit-transition-property: right;
+    transition-property: right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+.hvr-underline-from-left:hover:before,
+.hvr-underline-from-left:focus:before,
+.hvr-underline-from-left:active:before {
+    right: 0;
+}
+
+/* end hover effect navbar */
+
+/* logo */
+
+.nexto {
+    width: 64px;
+    height: 64px;
+}
+
+/* Home */
+
+#home {
+    margin-top: 10%;
+}
+
+.form-group {
+    margin-bottom: 0;
+}
+
+#formGroupEmail {
+    border-radius: 10px;
+}
+
+#formGroupPassword {
+    border-radius: 10px;
+}
+
+.submit_connexion {
+    border-radius: 24px;
+    width: 45%;
+}
+
+#home .btn-primary {
+    background-color: #431D60;
+    border-color: #431D60;
+}
+
+#home .btn-primary:hover {
+    background-color: #431D60;
+    border-color: #431D60;
+}
+
+#home a:hover {
+    color: #431D60;
+    text-decoration: none;
+}
+
+#home a {
+    color: #431D60;
+}
+
+/* App */
+
+.App-logo {
+    height: 40vmin;
+    pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
+}
+
+.App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.App-link {
+    color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* About */
+
+#section_about {
+    margin-top: 100px;
+}
+
+.text-desc {
+    color: #42ba96;
+    margin-top: 10px;
+}
+
+.discover_div {
+    position: relative;
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.badge-success-soft {
+    color: #42ba96;
+}
+
+.BsCheckCircle {
+    width: 200%;
+}
+
