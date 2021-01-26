@@ -2,6 +2,10 @@
     border-radius: 10px;
 }
 
+#formGroupEmail {
+    border-radius: 10px;
+}
+
 .submit_connexion {
     border-radius: 24px;
     width: 45%;
@@ -23,4 +27,8 @@ a:hover {
 
 a {
     color: #431D60;
+}
+
+#section_connexion {
+    margin-top: 20vh;
 }

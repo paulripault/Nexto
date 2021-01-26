@@ -1,12 +1,17 @@
-import React, { Component } from 'react';
-import { BrowserRouter as Router, Switch, Route, Link, BrowserRouter } from 'react-router-dom';
-import Navbar from './components/Navbar';
-import Home from './pages/Home';
-import Features from './pages/Features';
-import Contact from './pages/Contact';
-import About from './pages/About';
-import './App.css';
-
+import React from "react";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link,
+  BrowserRouter,
+} from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Home from "./pages/Home";
+import Features from "./pages/Features";
+import Contact from "./pages/Contact";
+import About from "./pages/About";
+import "./App.css";
 
 function App() {
   return (
@@ -17,13 +22,13 @@ function App() {
             <Navbar />
           </div>
           <Switch>
-            <Route exact path='/' component={Home} />
-            <Route exact path='/features' component={Features} />
-            <Route exact path='/contact' component={Contact} />
-            <Route path='/about' component={About} />
+            <Route exact path="/" component={Home} />
+            <Route exact path="/features" component={Features} />
+            <Route exact path="/contact" component={Contact} />
+            <Route path="/about" component={About} />
           </Switch>
         </Router>
-      </div >
+      </div>
     </BrowserRouter>
   );
 }
