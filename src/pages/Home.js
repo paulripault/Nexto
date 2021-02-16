@@ -1,10 +1,12 @@
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
-import "bootstrap/dist/css/bootstrap.min.css";
 import "./Home.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 import Image from "react-bootstrap/Image";
 import PhotoApp from "../img/app.png";
-import { Redirect } from "react-router-dom";
+import { BsCheckCircle } from "react-icons/bs";
+// import { Redirect } from "react-router-dom";
+// import redirection testing
 
 function Home() {
   const wait = function (duration = 1000) {
@@ -19,16 +21,19 @@ function Home() {
   const { isSubmitting, isValid, isSubmitSuccessful } = formState;
 
   const onSubmit = async (data) => {
-    await wait(2000);
+    console.log(data.email);
+    await wait(1000);
   };
 
+  /*
   if (isSubmitSuccessful) {
     return <Redirect to="/features" setTimeout="5000" />;
-
-    // si le formulaire est soumis correctement redirection
+    //si le formulaire est soumis correctement redirection
   }
+  */
 
-  console.log(errors);
+  // debugg
+  // console.log(errors);
 
   return (
     <div className="container" id="section_connexion">
@@ -37,11 +42,13 @@ function Home() {
           <div className="display-3 mt-5 mb-2"> Bienvenue! </div>
           <div className="h5 ml-2"> Connectez vous pour commencer! </div>
           {isSubmitSuccessful && (
-            <div className="alert alert-success">Connexion établit</div>
+            <div className="alert alert-success connexion">
+              <BsCheckCircle /> &nbsp; Connexion établit
+            </div>
           )}
           <form className="mt-3" onSubmit={handleSubmit(onSubmit)}>
             <div className="col form-group">
-              <label htmlFor="email">Email</label>
+              <label htmlFor="email"> Email </label>
               <input
                 type="email"
                 className="form-control formGroupEmail"
@@ -51,10 +58,10 @@ function Home() {
                   required: "Vous devez entrer un email valide !",
                 })}
               />
-              {errors.email && <span>{errors.email.message}</span>}
+              {errors.email && <span> {errors.email.message} </span>}
             </div>
             <div className="col form-group">
-              <label htmlFor="password">Password</label>
+              <label htmlFor="password"> Password </label>
               <input
                 type="password"
                 className="form-control formGroupPassword"
@@ -71,6 +78,7 @@ function Home() {
               >
                 Connexion
               </button>
+              <div className="container" id="userLogged"></div>
             </div>
           </form>
         </div>

@@ -12,8 +12,8 @@ export default function navbar() {
         <Navbar.Brand href="/" className="logo-title">
           <div>
             <RiChat1Line />
-          </div>
-        </Navbar.Brand>
+          </div>{" "}
+        </Navbar.Brand>{" "}
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ml-auto nav-links">
@@ -21,14 +21,14 @@ export default function navbar() {
               Fonctionnalités
             </Nav.Link>
             <Nav.Link href="/contact" className="hvr-underline-from-left">
-              Contact
+              Contact{" "}
             </Nav.Link>
             <Nav.Link href="/about" className="hvr-underline-from-left">
-              A propos
+              A propos{" "}
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
-      </Navbar>
+      </Navbar>{" "}
     </div>
   );
 }
