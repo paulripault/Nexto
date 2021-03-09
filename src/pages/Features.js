@@ -6,6 +6,7 @@ function Features() {
   return (
     <div className="container" id="section_features">
       <h2> Features </h2>
+      <div></div>
     </div>
   );
 }

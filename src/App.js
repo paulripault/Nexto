@@ -7,6 +7,7 @@ import {
   BrowserRouter,
 } from "react-router-dom";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import Features from "./pages/Features";
 import Contact from "./pages/Contact";
@@ -22,12 +23,13 @@ function App() {
             <Navbar />
           </div>
           <Switch>
-            <Route exact path="/" component={Home} />
-            <Route exact path="/features" component={Features} />
-            <Route exact path="/contact" component={Contact} />
-            <Route path="/about" component={About} />
+            <Route exact path="/" component={Home} />{" "}
+            <Route exact path="/features" component={Features} />{" "}
+            <Route exact path="/contact" component={Contact} />{" "}
+            <Route path="/about" component={About} />{" "}
           </Switch>
         </Router>
+        <Footer />
       </div>
     </BrowserRouter>
   );

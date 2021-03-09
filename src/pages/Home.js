@@ -25,12 +25,11 @@ function Home() {
     await wait(1000);
   };
 
-  /*
-  if (isSubmitSuccessful) {
-    return <Redirect to="/features" setTimeout="5000" />;
-    //si le formulaire est soumis correctement redirection
-  }
-  */
+  // if (isSubmitSuccessful) {
+  //     return <Redirect to = "/features"
+  //     setTimeout = "5000" / > ;
+  //     //si le formulaire est soumis correctement redirection
+  // }
 
   // debugg
   // console.log(errors);
