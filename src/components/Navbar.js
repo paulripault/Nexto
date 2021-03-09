@@ -1,7 +1,7 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Navbar.css";
-import { RiChat1Line } from "react-icons/ri";
+import LogoNexto from "../../src/img/logonexto.png";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 
@@ -11,9 +11,9 @@ export default function navbar() {
       <Navbar bg="transparent" expand="lg">
         <Navbar.Brand href="/" className="logo-title">
           <div>
-            <RiChat1Line />
-          </div>{" "}
-        </Navbar.Brand>{" "}
+            <img src={LogoNexto} alt="logo-nexto" width="128px" />
+          </div>
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ml-auto nav-links">
@@ -21,14 +21,14 @@ export default function navbar() {
               Fonctionnalités
             </Nav.Link>
             <Nav.Link href="/contact" className="hvr-underline-from-left">
-              Contact{" "}
+              Contact
             </Nav.Link>
             <Nav.Link href="/about" className="hvr-underline-from-left">
-              A propos{" "}
+              A propos
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
-      </Navbar>{" "}
+      </Navbar>
     </div>
   );
 }
