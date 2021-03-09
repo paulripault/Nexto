@@ -32,7 +32,7 @@ export default function Home() {
               >
                 Submit
               </Button>
-              <a className="text-center mt-4 ml-5"> Mot de passe oublié ? </a>
+              <a href="#" className="text-center mt-4 ml-5"> Mot de passe oublié ? </a>
             </Form.Row>
           </Form>
         </div>
